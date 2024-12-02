@@ -1,0 +1,24 @@
+# Hukum hooke --> F = -k * k
+import numpy as np
+import matplotlib pyplot as plt
+
+k = 60 N/m
+
+x = np.arange(0, 0.5, 0.02) 
+
+F = -k * x
+
+def f(x):
+       return F * x
+
+x = np. arange(0, 0.5, 0.02)
+
+y = F(x)
+
+plt.plot(x, y, color="pink", linestyle="-", label="F = -k * x)
+plt.xlabel("Posisi x(m)")
+plt.ylabel("Gaya F(x) (N)")
+plt.tittle("Grafik persamaan Hukum Hooke')
+plt.grid()
+plt.legend()
+plt.show()
