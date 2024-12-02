@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Konstanta gerak harmonis sederhana
+m = 1  # massa benda (kg)
+T = 10  # periode (detik)
+A = 0.05  # amplitudo (meter)
+omega = 2 * np.pi / T  
+# Waktu
+t = np.linspace(0, 50)
+
+x = A * np.cos(omega * t)
+
+plt.plot(t, x, color="green", label="x(t) = A cos(ωt)")
+plt.xlabel("Waktu t (detik)")
+plt.ylabel("Posisi x (m)")
+plt.grid()
+plt.legend()
+plt.show()
