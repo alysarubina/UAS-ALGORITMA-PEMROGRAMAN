@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+g = 9.8  #m/s^2
+
+v0 = 50  #m/s
+
+t_max = 2 * v0 / g  
+t = np.linspace(0, t_max)  
+
+y = v0 * t - 0.5 * g * t**2
+
+plt.plot(t, y, color="blue", label="h(t) = v0 * t - 0.5 * g * t^2")
+plt.xlabel("Waktu t (detik)")
+plt.ylabel("Ketinggian h (meter)")
+plt.title("Grafik Posisi Benda terhadap Waktu")
+plt.grid()
+plt.legend()
+plt.show()
