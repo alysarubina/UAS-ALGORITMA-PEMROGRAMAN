@@ -1,0 +1,18 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+def F(x):
+    return 2 * x**2 + 4 * x + 2
+
+x = np.linspace(0, 30)  
+
+F_values = F(x)
+
+
+plt.plot(x, F_values, label="F(x) = 2x^2 + 4x + 2", color="red")
+plt.xlabel("Posisi x (meter)")
+plt.ylabel("Gaya F (Newton)")
+plt.title("Grafik Gaya terhadap Posisi")
+plt.grid()
+plt.legend()
+plt.show()
